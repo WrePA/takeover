@@ -1,28 +1,93 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  <title>PoC Takeover</title> 
-  <script>alert("Takeover by ./WreP")</script>
- </head> 
- <body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;" bgcolor="black"> 
-  <link href="https://fonts.googleapis.com/css2?family=Graduate&amp;display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&amp;display=swap" rel="stylesheet"> 
-  <style type="text/css"> .lagu{ background:transparent; border:2px solid red; font-family:Share Tech Mono; color:white; font-size:15x; font-weight:bold; padding:3px 29px; text-decoration:none; text-shadow:0px 0px 0px ; } </style> 
-  <script> function play(){ var audio = document.getElementById('lagu'); audio.play(); } function liat(){ document.getElementById('galiat').style.visibility='visible'; } </script> 
-  <style type="text/css"> body{ background-color: black;background-size : cover;background-position: center;background-image: url("");} div.content{ color: white; font-family: 'Oswald', sans-serif; font-size: 40px; text-align: center; } div.body{ color: white; font-family: 'Oswald', sans-serif; font-size: 15px; text-align: center; } div.xxx{ color: white; font-family: tahoma; font-size: 17px; text-align: center; } div.xxxx{ color: white; font-family:courier; font-size: 17px; text-align: center; } </style> 
-  <style>.blink {animation: blink-animation 1s steps(5, start) infinite;-webkit-animation: blink-animation 1s steps(5, start) infinite;}@keyframes blink-animation {to {visibility: hidden;}}@-webkit-keyframes blink-animation {to {visibility: hidden;}}</style> 
+<head>
+  <title>Domain Seized by ./WreP</title>
+   <link href="https://fonts.googleapis.com/css2?family=Graduate&amp;display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Reggae+One&amp;display=swap" rel="stylesheet">
+  <style>
+    #text {
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: transparent;
+      -webkit-text-stroke: 2px #333;
+      transition: color 0.5s ease;
+    }
+     audio {
+     display: none;
+     }
+     button:hover {
+     background-color: #444;
+     }
+     button:active {
+     background-color: #222;
+     }
+     button {
+     background-color: transparent;
+     border: 2px solid #fff;
+     border-radius: 10px;
+     padding: 10px 20px;
+     font-size: 18px;
+     color: #fff;
+     cursor: pointer;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+     transition: all 0.3s ease;
+     }
+     #timeline {
+     width: 50%;
+     height: 20px;
+     margin: 10px auto;
+     background-color: #ccc;
+     border-radius: 10px;
+     cursor: pointer;
+     }
+     #timeline::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     width: 20px;
+     height: 20px;
+     background-color: #333;
+     border-radius: 10px;
+     cursor: pointer;
+     }
+     #timeline::-moz-range-thumb {
+     width: 20px;
+     height: 20px;
+     background-color: #333;
+     border-radius: 10px;
+     cursor: pointer;
+     }
+    body {
+    background-color: black;
+  </style>
   <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script> 
-  <table width="100%" height="100%"> 
-   <tbody> 
-    <tr> 
-     <td align="center"> 
-      <center> 
-       <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Gay_Pride_Flag_-_Animated.gif" width="35%"><br>
-       <!--https://images.squarespace-cdn.com/content/v1/5c3f4ea55ffd2030ba33f949/1560366747116-5PGHR5DKF6I6MZXE6F65/pride.png?format=750w -->
-       <br> 
-       <font face="Graduate" class="blink" color="red" size="5"><b>[+]-- PoC By </b></font> 
-       <b><font class="blink" face="Graduate" size="5" color="white"> | ./WreP --[+]</font></b><br>
-      </center></font></font></font></b></font>
-    <font face="Reggae One" size="5"<br><br><script language="javascript" type="text/javascript">
+</head>
+<body>
+  <div id="text"></div>
+  <script>
+    var text = "Hacked by ./WreP!";
+    var delay = 200; // milliseconds
+    var currentIndex = 0;
+    var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+    var colorIndex = 0;
+    var textInterval = setInterval(function() {
+      var char = text[currentIndex];
+      if (char === undefined) {
+        clearInterval(textInterval);
+        setInterval(function() {
+          document.getElementById("text").style.color = colors[colorIndex];
+          colorIndex = (colorIndex + 1) % colors.length;
+        }, 300); // change color every second
+        return;
+      }
+      document.getElementById("text").innerHTML += char;
+      document.getElementById("text").style.color = colors[colorIndex];
+      colorIndex = (colorIndex + 1) % colors.length;
+      currentIndex++;
+    }, delay);
+  </script>
+  <center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Gay_Pride_Flag_-_Animated.gif" width="50%"><br>
+        <font face="Reggae One" size="5"<br><br><script language="javascript" type="text/javascript">
      var teks="Hello this is just a Proof of Concept dont worry!" 
      var speed=20 
 
@@ -84,19 +149,42 @@ function starteffect() {
 
 starteffect()
 </script></font><br><br><br><br>
-
-                <style type="text/css">
+    <style type="text/css">
       .WREP{ 
       background:transparent;
       border:3px solid white;
       text-shadow:0px 0px 5px rgb(0, 106, 255);
       border-radius:13px; font-family:Reggae One;
       color:rgb(0, 0, 204); font-size:20px; font-weight:bold; padding:3px 29px; text-decoration:none; text-shadow:0px 0px 20px #eef201;height:40px;width:150px; } </style>
-    <a class="WREP" href="https://t.me/WreP_JP">Contact me | Telegram</a><br>
-   </td> 
-    </tr> 
-   </tbody> 
-  </table> 
- 
+    <a class="WREP" href="https://t.me/WreP_JP">Contact me | Telegram</a><br><br>
+     <audio id="music" src="https://vmlmax.com/wp-content/uploads/2022/06/Rick-Astley-Never-Gonna-Give-You-Up.mp3"></audio><button id="play-button" onclick="playMusic()">Play</button>
+  <button id="pause-button" onclick="pauseMusic()">Pause</button><br>
+  <input type="range" id="timeline" min="0" max="100" value="0" oninput="seekMusic()">
+  <script>
+    function playMusic() {
+      var music = document.getElementById("music");
+      music.play();
+      updateTimeline();
+    }
+    function pauseMusic() {
+      var music = document.getElementById("music");
+      music.pause();
+    }
+    function seekMusic() {
+      var music = document.getElementById("music");
+      var timeline = document.getElementById("timeline");
+      music.currentTime = (timeline.value / 100) * music.duration;
+    }
+    function updateTimeline() {
+      var music = document.getElementById("music");
+      var timeline = document.getElementById("timeline");
+      timeline.value = (music.currentTime / music.duration) * 100;
+      if (music.ended) {
+        timeline.value = 0;
+      }
+      requestAnimationFrame(updateTimeline);
+    }
+  </script>
+  </center>
 </body>
 </html>
